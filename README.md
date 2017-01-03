@@ -35,4 +35,4 @@ python mass-update.py
 #### Support
 Create an issue and I will try to help you out.
 
-This project is supported by [Haileybury](haileybury.com.au).
+This project is supported by [Haileybury](http://www.haileybury.com.au).
