@@ -9,8 +9,8 @@ import pprint
 #working_path = '/path/to/the/folder/housing/the/bulk_assign_avatars/script/' # Base working path of this script, where everything will be housed
 working_path = './' # Base working path of this script, where everything will be housed
 
-domain = '***.instructure.com'
-access_token = "ADMIN ACCESS TOKEN"
+domain = 'xxx.instructure.com'
+access_token = "Access Token"
 
 csv_filename = 'data.csv' # Example: 'API_Testing/users_provisioning.csv', relative to
                             # working_path.  This file contains the three  columns needed
@@ -100,7 +100,8 @@ for user_image in csv_file_reader:
   files = {'file':open(image_path,'rb').read()}
   
   _data = json_res.items()
-  _data[1] = ('upload_params',_data[1][1].items())
+  #Below line is only thing changed from original script. No longer fails on upload/assign. 
+  _data[1] = ('upload_params',_data[3][1].items())
 
   #log("Yes! Done sending pre-emptive 'here comes data' data, now uploading the file...")
   upload_file_response = requests.post(json_res['upload_url'],data=_data[1][1],files=files,allow_redirects=False)
