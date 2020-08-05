@@ -1,6 +1,8 @@
 # Canvas Mass Avatar Upload by SIS ID
 
-This project is a fork of [this respository](https://github.com/unsupported/canvas/tree/master/api/bulk_assign_avatars/python).
+This project is a fork of [this respository](https://github.com/lthh89vt/CanvasMassAvatarUploadSISID).
+
+Which is in turn, a fork of this [this respository](https://github.com/unsupported/canvas/tree/master/api/bulk_assign_avatars/python)
 
 #### Purpose
 This Python script will help to mass upload avatar for Canvas users with their SIS ID.
