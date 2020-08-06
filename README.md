@@ -4,9 +4,13 @@ This project is a fork of [this respository](https://github.com/lthh89vt/CanvasM
 
 Which is in turn, a fork of this [this respository](https://github.com/unsupported/canvas/tree/master/api/bulk_assign_avatars/python)
 
+Thank you for your work lthh89vt!
+
 #### Purpose
 This Python script will help to mass upload avatar for Canvas users with their SIS ID.
 SIS ID is your internal ID when using SIS User Import in Canvas.
+
+This Python script will allow mass uploading of Canvas user avatars. 
 
 #### Requirements
 These are the minimum requirements to run this script:
@@ -31,10 +35,12 @@ Please see the sample data.csv for data structure. The columns are:
 #### Run
 
 ```sh
-python mass-update.py
+python mass-upload.py
 ```
 
 #### Support
-Create an issue and I will try to help you out.
+Let me know if you have any issues and I will attempt to assist. I have run the script successfully from both macOS and Windows. 
 
-This project is supported by [Haileybury](http://www.haileybury.com.au).
+I did not write the script, I simply fixed an line that caused the previous project to fail when assigning photos to Canvas users (at least on macOS)
+
+This project is maintained by JKL @ MLC School Sydney
